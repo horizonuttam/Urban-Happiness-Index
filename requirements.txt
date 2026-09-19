@@ -1,0 +1,20 @@
+# Analysis pipeline (Data_merge.py, happiness_analysis.py)
+pandas
+numpy
+scikit-learn
+statsmodels
+xgboost
+joblib
+fastapi
+uvicorn[standard]
+
+# Excel engines for the source files.
+# openpyxl reads .xlsx (WHR, SDG_Index, DEGREE_OF _URBANIZATION);
+# xlrd reads the legacy .xls (GDP_PER_CAPITA, PM25_MEA, IHR).
+# Data_merge.py fails without both.
+openpyxl
+xlrd>=2.0.1
+
+# Dashboards (dss.py, dss_full_dashboard.py)
+dash
+plotly
